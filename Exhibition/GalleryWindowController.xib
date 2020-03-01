@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A178t" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8121.17"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GalleryWindowController" customModule="Exhibition" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="scr-Rd-1iN" id="Qno-Gq-vYg"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Exhibition" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" frameAutosaveName="GalleryWindow" animationBehavior="default" id="scr-Rd-1iN">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="567" height="351"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <view key="contentView" wantsLayer="YES" id="y3W-6K-mUP">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="351"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <animations/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="5AC1882D-F9D8-4A96-AEB4-348272F69168" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="wcX-oy-qKJ">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="iRo-OY-iaw"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="PZE-7E-ESp"/>
+                    <toolbarItem implicitItemIdentifier="7C28643C-8FA0-4CA2-812A-C855216F47C3" label="Toggle Sidebar" paletteLabel="Toggle Sidebar" image="NSSidebarTemplate" id="7hn-0U-3td">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="38" height="25"/>
+                        <size key="maxSize" width="38" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="guZ-QA-j8M">
+                            <rect key="frame" x="24" y="14" width="38" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <animations/>
+                            <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSSidebarTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="llL-4Z-2Mk">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="toggleSidebar:" target="-1" id="HGP-R2-g64"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="11071452-CD5C-40A0-AD17-209C0E8767E7" label="Add Collection" paletteLabel="Add Collection" image="NSAddTemplate" id="LHT-Mg-MlQ">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="38" height="25"/>
+                        <size key="maxSize" width="38" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="T6h-TL-ZPM">
+                            <rect key="frame" x="23" y="14" width="38" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <animations/>
+                            <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uho-LX-A6n">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="addImageCollection:" target="-2" id="pSh-zV-VVu"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="7hn-0U-3td"/>
+                    <toolbarItem reference="iRo-OY-iaw"/>
+                    <toolbarItem reference="LHT-Mg-MlQ"/>
+                    <toolbarItem reference="PZE-7E-ESp"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <point key="canvasLocation" x="339.5" y="412.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSSidebarTemplate" width="15" height="12"/>
+    </resources>
+</document>
