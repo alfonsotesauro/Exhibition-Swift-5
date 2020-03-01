@@ -1,3 +1,5 @@
+This repository contains a copy of the Exhibition Apple Sample Code updated for Swift 5 with minimal modifications.
+
 # Exhibition: An Adaptive OS X App
 
 The Exhibition sample demonstrates techniques for making windows more adaptive. You’ll see how to use the NSSplitViewController class to create system-standard adaptive sidebars. The sample also shows how to use the NSCollectionView class API introduced in OS X 10.11 to create more flexible layouts using constraint priorities and the automatic detaching behavior of the NSStackView class.
